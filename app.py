@@ -35,4 +35,4 @@ for col in label_encoders:
 
 if st.button("Predict Price"):
     prediction=model.predict(input_data)[0]
-    st.success(f"Estimated Flight Price: ₹ {int(prediction):,}")
+    st.success(f"Estimated Flight Price: ₹ {float(prediction):,}")
